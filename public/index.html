@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Project round three</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    
+</head>
+<body>
+    <table>
+        <tr>
+         <td>Id: </td>
+         <td><input type="text" name="id" id="user_id" /></td>
+        </tr>
+        <tr>
+         <td>User Name: </td>
+         <td><input type="text" name="user_name" id="user_name" /></td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          <input type="button" value="Save" id="save" onclick="save_user();" />
+          <input type="button" value="Update" onclick="update_user();" />
+          <input type="button" value="Delete" onclick="delete_user();" />
+         </td>
+        </tr>
+       </table>
+       
+       <h3>Users List</h3>
+       
+       <table id="tbl_users_list" border="1">
+        <tr>
+         <td>#ID</td>
+         <td>NAME</td>
+        </tr>
+       </table>
+       <script src="./firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
